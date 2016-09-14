@@ -1,0 +1,17 @@
+name       : livestreamer
+version    : 1.12.2
+release    : 1
+source     :
+    - https://github.com/chrippa/livestreamer/archive/v1.12.2.tar.gz : 4d6e2954abff198dce082f34a19a54dbf6fb95ca53567d92a661e527fe68e3ba
+license    : BSD-2-Clause
+component  : multimedia.video
+summary    : Livestreamer is a utility that pipes video streams from various services into a video player, such as VLC
+description: |
+    Livestreamer is a utility that pipes video streams from various services into a video player, such as VLC
+builddeps  :
+    - pkgconfig(python-3.5)
+    - python-sphinx
+build      : |
+    %python3_setup
+install    : |
+    %python3_install
